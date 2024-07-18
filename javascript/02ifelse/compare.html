@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>first number</label> <br>
+    <input type="text" id="F_num"><br>
+
+    <label>second number</label><br>
+    <input type="text" id="S_num"><br>
+
+    <label>third number</label><br>
+    <input type="text" id="T_num"><br> <br>
+
+    <button onclick="check()">CLICK ME</button><br><br>
+    <span id="check">check here</span><br>
+
+    <script>
+        function check(){
+            var a = parseInt(document.getElementById("F_num").value);
+            var b = parseInt(document.getElementById("S_num").value);
+            var c = parseInt(document.getElementById("T_num").value);
+
+                if(a==b && b==c){
+                    document.getElementById("check").innerHTML = "number are equal";
+                }
+                if(a>b && a>c){
+                    document.getElementById("check").innerHTML = "number a  is greater";
+                }
+                if(b>c && b>a){
+                document.getElementById("check").innerHTML = "number b is greater";
+                }
+                if(c>a && c>b){
+                document.getElementById("check").innerHTML = "number c is greater"; 
+                }  
+                if(a == b && c < a){
+                document.getElementById("check").innerHTML = "number a b are greater than c ab  equal"; 
+                }
+                if(a == c &&  b < a){
+                document.getElementById("check").innerHTML = "number a c are greater than b ac equal"; 
+                }
+                if(c == b && a < b ){
+                document.getElementById("check").innerHTML = "number c b are greater than a bc equal"; 
+                }
+            }
+
+
+    </script>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <label>first number</label> <br>
+    <input type="text" id="F_num"><br>
+
+    <label>second number</label><br>
+    <input type="text" id="S_num"><br> <br>
+    
+    <button onclick="swipe()">CLICK ME</button>  <br>
+    <span id="demo1">first</span><br>
+    <span id="demo2">second</span>
+
+
+   
+    <script>
+        function swipe(){
+            let fnum = document.getElementById("F_num").value;
+            let snum = document.getElementById("S_num").value;
+
+            
+            // let temp = fnum
+            // fnum = snum
+            // snum = temp
+
+            
+            [fnum,snum] = [snum,fnum];
+
+           
+        
+            document.getElementById("demo1").innerHTML = fnum ;
+            document.getElementById("demo2").innerHTML = snum;
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

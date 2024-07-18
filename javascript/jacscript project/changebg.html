@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       body{
+            height: 100%;
+            width: 100%;
+            margin-top: 10%;
+            margin-left: 25%;
+            align-items: center;
+            
+        }
+        #btn{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-left: 200px; 
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">CHANGE BACKGROUND COLOUR</h1>
+    <button onclick="red()" id="btn">red</button>
+    <button onclick="blue()" id="btn">blue</button>
+    <button onclick="green()" id="btn">green</button>
+    <button onclick="yellow()" id="btn">yellow</button>
+    <button onclick="black()" id="btn">black</button>
+    <button onclick="pink()" id="btn">pink</button>
+  <script>
+    function red() {
+        document.body.style.background = "red"
+    }
+    function blue() {
+        document.body.style.background = "blue"
+    }
+    function green() {
+        document.body.style.background = "green"
+    }
+    function yellow() {
+        document.body.style.background = "yellow"
+    }
+    function black() {
+        document.body.style.background = "black"
+        if (black) {
+            
+        }
+    }
+    function pink() {
+        document.body.style.background = "pink"
+    }
+
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>first value</label>
+    <input type="number" id="fnum"><br><br>
+
+    <label>second value</label>
+    <input type="number" id="snum"><br><br>
+
+    <label>third value</label>
+    <input type="number" id="tnum"><br><br>
+
+    <button onclick="triangle()"> click here</button><br>
+    <span id="result">The number is</span><br>
+
+    <script>
+        function triangle() {
+            let a = document.getElementById("fnum").value;
+            let b = document.getElementById("snum").value;
+            let c = document.getElementById("tnum").value;
+
+
+            if (a == b && a == c) {
+                document.getElementById("result").innerHTML = " this is triangle"
+            }
+            if (a > b && b == c) {
+                document.getElementById("result").innerHTML = " this is not triangle"
+            }
+            if (b > c && a == c) {
+                document.getElementById("result").innerHTML = " this is not triangle"
+            }
+            if (c > a && a == b) {
+                document.getElementById("result").innerHTML = " this is not triangle"
+            }
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

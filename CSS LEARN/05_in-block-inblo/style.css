@@ -1,0 +1,21 @@
+
+span {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+}
+
+.in-bl {
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+}
+
+.block {
+  display:block;
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+}

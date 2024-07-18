@@ -1,0 +1,42 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+nav>h1{
+font-size: xx-large;
+
+
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    list-style: none;
+    gap: 40px;
+}
+
+li>a{
+text-decoration: none;
+color: black;
+font-size: x-large;
+font-weight: 900;
+}
+
+ul>button{
+    border-radius:13px;
+    padding: 10px;
+}
+img{
+    width:500px;
+    height:600px ;
+   
+}

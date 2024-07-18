@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label >ENTER NUMBER</label>
+    <input type="text" id="fnum" placeholder="Enter year" ><br><br>
+
+
+    <button onclick="leapyear()"> click here</button><br>
+    <span id="result">The number is</span><br>
+
+    <script>
+    function leapyear() {
+        let a = document.getElementById("fnum").value;
+        
+         if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0) {
+               document.getElementById("result").innerHTML = "leapyear"
+            } 
+            else {
+                document.getElementById("result").innerHTML = "not leapyear"
+               
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- function leapyear(year) {
+    // let a = document.getElementById("fnum").value;
+
+    if ((year % 4 === 0 &&  year % 100 !== 0) || year % 400 === 0) {
+        // document.getElementById("result").innerHTML = "leapyear"
+        console.log(year + ' is a leap year');
+    }
+    else {
+        // document.getElementById("result").innerHTML = "not leapyear"
+        console.log(year + ' is not a leap year')
+
+    }
+    
+    }
+-->

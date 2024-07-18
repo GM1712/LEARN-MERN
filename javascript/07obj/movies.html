@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter movie</label><br>
+    <input type="text" id="fnum"><br>
+
+
+    <button type="button"onclick="findmovie(obj)">findmovie</button><br>
+    <span id="total">......<span><br>
+<script>
+    let obj = [
+  {
+    movies: "thor",
+    year: 2019,
+    status: "hit",
+    actor: ["thor", "uskepapa", "uskimuumy",["pta",{name:"Ganesh"}]],
+  },
+  {
+    movies: "hulk",
+    year: 2016,
+    status: "hit",
+    actor: ["hulk", "kernal", "ptanhi",["nhi",{name:"krishna"}]],
+  },
+  {
+    movies: "fast&furious",
+    year: 2015,
+    status: "NA",
+    actor: ["ranvir", "uskebachaa", "therock",["pt",{name:"suraj"}]],
+  },
+  {
+    movies: "animal",
+    year: 2017,
+    status: "floop",
+    actor: ["ranvir", "rashmika", "anil",["nh",{name:"mohit"}]],
+  },
+  {
+    movies: "tere naam",
+    year: 2022,
+    status: "floop",
+    actor: ["salmonbhai", "uskepapa","nirjla",["hi",{name:"ishan"}]],
+  },
+];
+
+function findmovie() {
+    let output = obj.filter(x=>{
+       x.actor.filter(y=>y==x);
+      return x;   
+    })
+    console.log(output);
+}
+findmovie(obj)
+
+
+
+
+
+
+
+    // function findmovie (){
+    //     let FNum = (document.getElementById("fnum").value);
+    //     // let movieData = "";
+    //       for (let i = 0; i < obj.length; i++) {
+    //           if (obj[i].year==FNum) {
+    //             // movieData = obj[i];
+    //             console.log(obj[i]);
+    //           }
+    //         for (let j = 0; j < obj.length; j++) {
+    //             if (obj[i].actor[j]==FNum) {
+    //             console.log(obj[i]);
+    //             }
+    //         }
+    //       }
+    //     }
+        //  }
+        // }
+        // if (obj[i].movies==FNum) {
+        //         console.log(obj[i]);
+        //     }else{
+        //       console.log("Not found.!",i);
+        // }
+
+
+
+
+   
+</script>
+</body>
+</html>

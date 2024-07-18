@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1 id="data">30</h1>
+    <h2 id="sdata">20</h2>
+
+    <h3 id="total"></h3>
+    <h3 id="tot"></h3>
+    <h3 id="tota"></h3>
+    <h3 id="to"></h3>
+
+
+
+    <script>
+        let name = document.getElementById("data").innerHTML;
+        let sname = document.getElementById("sdata").innerHTML;
+
+        document.getElementById("total").innerHTML=parseInt(name)+ parseInt(sname);
+        document.getElementById("tot").innerHTML=parseInt(name)-parseInt(sname);
+        document.getElementById("tota").innerHTML=parseInt(name)* parseInt(sname);
+        document.getElementById("to").innerHTML=parseInt(name) /parseInt(sname);
+
+    </script>
+</body>
+</html>

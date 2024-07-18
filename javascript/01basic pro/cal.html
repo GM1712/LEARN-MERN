@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js</title>
+</head>
+<body>
+    <label>first number</label><br>
+    <input type="text" id="fnum"><br>
+
+    <label>second number</label><br>
+    <input type="text" id="snum"><br><br>
+
+
+    <button type="button"onclick="sum()">sum</button>
+    <button type="button"onclick="substact()">substact</button>
+    <button type="button"onclick="multiple()">multiple</button>
+    <button type="button"onclick="division()">division</button>
+    <button type="button"onclick="percentage()">percentage</button><br>
+
+
+    <span id="total">total is<span><br>
+
+
+    <script>
+        function sum(){
+            var FNum = parseInt(document.getElementById("fnum").value);
+            var SNum = parseInt(document.getElementById("snum").value);
+
+            var total = FNum + SNum
+            document.getElementById("total").innerHTML = total;
+
+        }
+
+        function substact(){
+            var FNum = parseInt(document.getElementById("fnum").value);
+            var SNum = parseInt(document.getElementById("snum").value);
+
+            var total = FNum - SNum
+            document.getElementById("total").innerHTML = total;
+
+        }
+
+        function multiple(){
+            var FNum = parseInt(document.getElementById("fnum").value);
+            var SNum = parseInt(document.getElementById("snum").value);
+            var total = FNum * SNum
+            document.getElementById("total").innerHTML = total;
+
+        }
+
+        function division(){
+            var FNum = parseInt(document.getElementById("fnum").value);
+            var SNum = parseInt(document.getElementById("snum").value);
+            var total = FNum / SNum
+        
+            document.getElementById("total").innerHTML = total;
+
+        }
+        function percentage(){
+            var FNum = parseInt(document.getElementById("fnum").value);
+            var SNum = parseInt(document.getElementById("snum").value);
+
+            var total = FNum/100*SNum
+            document.getElementById("total").innerHTML = total;
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
